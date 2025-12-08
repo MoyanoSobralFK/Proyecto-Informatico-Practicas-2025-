@@ -1,0 +1,141 @@
+/* Pagina para los colores: https://htmlcolorcodes.com/es/ */
+
+.prueba{
+
+    /*POSICION*/
+    display: flex;
+    justify-content:center;
+
+    /*FORMA*/
+    border: cornflowerblue 2.8px solid;
+
+    /*COLORES*/
+    background-color: #822E0f;      /*Fondo*/ 
+    border-color: burlywood;        /*Borde*/
+    color: whitesmoke;              /*Letra*/ 
+}
+
+.tema{
+    /*POSICION*/
+    display: flex;
+    justify-content: center;
+
+    /*FORMA*/
+    height: 25px;
+    width:  125px;
+    padding: 14.5px;        /*Relleno:      Espacio entre el contenido de un elemento y su borde*/
+    
+    margin: 15px;        /*Margen:       Espacio entre el elemento y otros*/
+   
+    border: 2.4px solid;
+
+    /*COLORES*/
+    background-color: burlywood;
+    border-color: #4A1E04;
+}
+
+.enFila
+{
+  display: flex;
+  justify-content: center; 
+  flex-direction: row;  /* Fila de elementos */
+  justify-content: space-around;
+}
+
+.enFila2{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.enColumna
+{
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;  /* Columna de elementos */
+}
+
+.fondoPsicodelico {
+  background-color: rgba(255, 255, 255, 0.75); /* Blanco con 75% de opacidad, mientras mas opaco, menos se ve la imagen. */
+  background-image: url('fondo2.png');
+  background-blend-mode: overlay; /* Mezcla el color con la imagen */
+
+  padding: 14.5px;      /*Relleno:      Espacio entre el contenido de un elemento y su borde*/
+  margin: 15px;        /*Margen:       Espacio entre el elemento y otros*/
+}
+
+.fondoColorido{
+
+    background-color: rgba(255, 255, 255, 0.82);
+    background-image: url('recurso.png');
+    background-blend-mode: overlay;
+}
+
+.espacioExterior {
+  background-color: rgba(255, 255, 255, 0.55); 
+  background-image: url('fondo.jpg');
+  background-blend-mode: overlay; 
+}
+
+.FALSO{
+    background-color: rgba(255, 255, 255, 0.15);
+    background-image:  url('FALSO.png');
+    background-blend-mode: overlay;
+
+    color: whitesmoke;
+
+    padding: 4.67px;
+    margin:   9px;
+}
+
+
+.Verdad{
+    background-color: rgba(255, 255, 255, 0.15);
+    background-image:  url('Verdadero.jpg');
+    background-blend-mode: overlay;
+
+    color: whitesmoke;
+
+    padding: 4.67px;
+    margin:   9px;
+}
+
+.centrado{
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.alFinal
+
+{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.espacioEntreEjercicios{
+    margin: 169px;
+}
+
+#act62 {
+    height: 103px;
+    width: 202px;
+    margin: 10px;
+}
+
+#act72 {
+    height: 69.9px;
+    width: 569.9px;
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid blue;
+}
+
+#act82 {
+    height: 133.9px;
+    width: 133.9px;
+    padding: 6px;
+    margin: 10px;
+}
+
