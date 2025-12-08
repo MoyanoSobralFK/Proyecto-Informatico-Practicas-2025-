@@ -1,0 +1,190 @@
+<!-- Siempre apretar ! + TAB para que se escriba el ejemplo.-->
+<!-- <br> = \n -->
+
+<!DOCTYPE html>
+<html lang="spanish" class="fondoColorido">
+<head>
+    <link rel="stylesheet" href="styles.css">  <!--Para hacer que lea lo que dice styles.css-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Los ejercicios de las pruebas de TRINI</title>
+</head>
+<body>
+
+<!--  .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- -->
+    <h1 class="prueba">PRUEBA 1</h1>
+    <h2 class="tema">Temas</h1>
+    
+    <div>
+        <div class="enFila2"><h3>CLI </h3><h6>(Command Line Interface)</h6></div>
+        <p><b>Comando:</b> Instruccion que el usuario le da al sistema.</p>
+        <p>TIPOS</p>
+        <p>I.	<b>Mkdir -nombre-:</b> Crea una nueva carpeta nombrada como -nombre- ("make directory").<br>
+           II.	<b>Cd    -nombre-:</b> Entra a la carpeta  -nombre-. ("change directory").<br>
+           III.	<b>Cd:</b> Sube un nivel en la estructura de carpetas.<br>
+           IV.  <b>Cd.. :</b> Va a la carpeta anterior/padre.<br>
+           V.   <b>ls:</b> Lista los archivos y carpetas de la ubicacion/carpeta actual.(list)<br>
+           VI.  <b>Echo "texto":</b> Muestra texto en consola o crea archivos con contenido.<br>
+           VII  <b>cat -archivo.txt-: Mostrará el contenido del archivo -archivo.txt- en la terminal.</b><br>
+           VIII.<b>cat x.txt y.txt > z.txt</b>  creará un archivo Z.txt que contendrá los contenidos de X.txt e Y.txt.<br>
+           IX.  <b>touch -archivo.txt-:</b> crea un archivo vacío llamado archivo.txt.<br>
+           X.	<b>Sort:</b> Ordena los archivos alfabéticamente. <br>
+        </p>
+
+        <h3>Git</h3>
+        <p> I.	    <b>git init:</b> Inicializa un nuevo repositorio local.<br>
+            II.	    <b>git add archivo:</b> Agrega el archivo archivo al área de staging.<br>
+            III.	<b>git commit -m "mensaje":</b> Guarda los cambios localmente con un mensaje.<br>
+            IV.     <b>git config:</b> Configura opciones de Git (usuario, email, etc.). <br>
+            V.	    <b>git remote add origin -URL-:</b> Conecta el repo local al remoto (Generalmente GitHub) con la URL especificada.<br>
+            VII.	<b>git push origin main:</b> Sube los commits al repositorio remoto origin en la rama main.<br>
+            VIII.	<b>git pull:</b> Trae los cambios desde el repo remoto al local.<br>
+</p>
+
+        <h3>GitHub</h3>
+        <p> <b>I.	Crear nuevo repo:</b> Botón "New repository" en GitHub, completás datos y lo creás. <br>
+            <b>II.	PATs (Personal Access Tokens):</b> Token que reemplaza contraseña para autenticar en GitHub desde la terminal.<br>
+            <b>III. Pushear repo desde terminal:</b> git init → git remote add → git add → git commit→git push.<br>
+            <b>IV.	GitHub Pages:</b> En Settings del repo, activás Pages con la rama main y carpeta `/root`. <br>
+        </p>
+
+        <h3>HTML</h3>
+        <h5>Elementos y estructura</h5>
+        <p>I.	Elementos: Son las partes del documento HTML, pueden ser reconocibles porque poseen etiquetas como `<p>`, `<a>` y `<img>`.
+           II.  Atributos: Son palabras especiales utilizadas dentro de la etiqueta de apertura para controlar el comportamiento del elemento. Ejemplos: id y class. 
+           
+        </p>
+    </div>
+
+<!--  .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- -->
+    <h1 class="prueba">PRUEBA 2</h1>
+
+    <h2 class="tema">Temas</h2>
+    <h4 class="centrado"> Programacion de paginas web que se ejecutan en la computadora del usuario usando Javascript<br><br>DEFINICIONES:
+         <br>     Atributo: Son palabras especiales utilizadas dentro de la etiqueta de apertura para controlar el comportamiento del elemento. Ejemplos: id y class.
+         <br>     Evento: Cosas que hace el usuario como un click o apretar una tecla.
+         <br>     Handler:Traducidos al español como manejadores de eventos, son funciones que se ejecutan cuando ocurre un evento. 
+         </h4>
+         <div class="centrado"> <img src="Captura2 sintaxis.png"> </div>
+         
+
+    <h2 class="tema">Tema 1</h2>
+
+      <div class="espacioEntreEjercicios"></div>
+     <h4>1)Indicar verdadero o falso</h4>
+     <div>
+           <h4>a. Al enviar un formulario el navegador nos redirige a otra ubicacion.</h4>
+           <div class="enFila fondoPsicodelico">
+                  <form onsubmit="VerdaderoP2(event)"> <button class="Verdad">Verdadero</button> </form>
+                  <form> <button class="FALSO">Falso</button> </form>
+           </div>
+
+           <h4>b. En HTML podemos asignar handlers a los elementos que se originen en un elemento a traves de atributos de ese elemento.</h4>
+
+           <div class="centrado fondoPsicodelico"> 
+                  <button class="Verdad" onclick="CORRECTO()">Verdadero</button>  <button class="FALSO" onclick="INCORRECTO()">Falso</button>
+           </div>
+
+     </div>
+
+     <div class="espacioEntreEjercicios"></div>
+     <h4>6) "Completar los espacios en blanco". <br> La funcion elige un numero al azar hasta 255.</h4>
+     
+     <!--fotos-->
+     <div class="enFila">
+        <div class="fondoPsicodelico"> <h6>Problema</h6>
+              <img src="Captura2 61.png">
+        </div>
+
+        <div class="fondoPsicodelico"> <h6>Solucion</h6>
+            <img src="Captura2 62.png">
+        </div>
+
+     </div>
+     
+     <!--botom--> 
+     <div class="centrado"><button onclick="ejercicio6()" id="act62" class="espacioExterior">Dar numero al azar</button></div>
+
+
+
+     <div class="espacioEntreEjercicios"></div>
+     <h4>7) "Completar los espacios en blanco". <br> La funcion agarra valores de un formulario, vamos a programarlo. </h4>    
+    
+    <!--fotos-->
+     <div class="enFila">
+        <div class="fondoPsicodelico"> <h6>Problema</h6>
+        <img src="Captura2 71.png">      
+        </div>
+
+        <div class="fondoPsicodelico"> <h6>Solucion</h6>
+        <img src="Captura2 72.png">
+        </div>
+
+     </div>
+    
+    <!-- formulario -->
+    <div class="centrado">
+    <form onsubmit="ejercicio7(event)"  id="act72" class="espacioExterior centrado">
+        <input type="text" name="name" placeholder="Nombre aca">   <!-- Campo tipo="texto"  loqueponecuandoestavacio="Nombre aca"-->
+        <input type="submit" value="Enviar">                       <!-- Campo tipo="Botom de envio" Value="Lo que dice el botom -->   
+    </form>
+    </div>  
+
+
+      <div class="espacioEntreEjercicios"></div>
+    <h4>8) "Completar los espacios en blanco. Se puede usar la funcion del ejecicio 6".<br> La funcion crea 16 divs con colores aleatoreos. Los divs son como contenedores</h4>
+       <!--fotos-->
+     <div class="enFila">
+        <div  class="fondoPsicodelico"> <h6>Problema</h6>
+              <img src="Captura2 81.png">
+        </div>
+        <div  class="fondoPsicodelico"> <h6>Solucion</h6>
+            <img src="Captura2 82.png">
+        </div>
+     </div>
+       <h6 class="alFinal">NOTA: Cada vez que se javascript añade elementos a una pagina, los hace al final de la misma.<br>Capaz haya una forma de hacer que no sea asi, pero no parece muy importante.</h6>
+     <!--botom-->
+        <div class="centrado"><button onclick="ejercicio8()" id="act82" class="espacioExterior">Crear los divs</button></div>
+      
+        <h2 class="tema">Tema ?</h2>
+        
+        <h4>1)Escribir una funcion que reciba un numero a y un numero b de un formulario para crear un vector con todos los numeros enteros entre ambos.<br>Luego usando Json.strinfingy(vector) agregar un parrafo con el contenido del mismo</h4>
+        <form onsubmit="ejercicioZ(event)">
+            <input type="number" placeholder="a" id="a">
+            <input type="number" placeholder="b" id="b">
+            <input type="submit">
+        </form>
+
+        <div class="fondoPsicodelico"> 
+            <h6>Solucion</h6>
+            <img src="Captura2 Z.png"> 
+        </div>
+
+        <div class="espacioEntreEjercicios"></div>
+
+        <h4>2)Escribir una funcion handleSubmit(event) con dos inputs de tipo texto con nombres a y b. Al enviar el formulario se agrega un parrafo al documento con el resultado de a + b. Por ejemplo si el usuario ingresa 5 en a y 20 en b el parrafo debe decir "5 + 20 = 25". Blanquear el formulario despues de enviarlo.</h4>
+
+        <form onsubmit="ejercicio213(event)">
+              <input type="number" id="a" placeholder="a">
+              <input type="number" id="b" placeholder="b">
+              <input type="submit" value="Enviar">
+        </form>
+
+        <div class="fondoPsicodelico">
+            <h6>Solucion</h6>
+            <img src="Captura2 213.png">
+        </div>
+<!--  .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- -->
+        <h1 class="prueba">PRUEBA 3</h1>
+      
+<!--  .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- -->
+        <h1 class="prueba">PRUEBA 4</h1>
+        <h2 class="tema">Tema 2</h2>
+
+
+</body>
+
+<script src="main.js"></script> <!--Para que haga lo que diga main.js-->
+</html>
