@@ -25,7 +25,7 @@
            II.	<b>Cd    -nombre-:</b> Entra a la carpeta  -nombre-. ("change directory").<br>
            III.	<b>Cd:</b> Sube un nivel en la estructura de carpetas.<br>
            IV.  <b>Cd.. :</b> Va a la carpeta anterior/padre.<br>
-           V.   <b>ls:</b> Lista los archivos y carpetas de la ubicacion/carpeta actual.(list)<br>
+           V.   <b>ls:</b> Lista los archivos y carpetas de la ubicacion/carpeta actual (list).<br>
            VI.  <b>Echo "texto":</b> Muestra texto en consola o crea archivos con contenido.<br>
            VII  <b>cat -archivo.txt-: Mostrará el contenido del archivo -archivo.txt- en la terminal.</b><br>
            VIII.<b>cat x.txt y.txt > z.txt</b>  creará un archivo Z.txt que contendrá los contenidos de X.txt e Y.txt.<br>
@@ -76,8 +76,8 @@
 
         <h5 class="hAmarillo">Estructura semantica</h5>
         <p>
-            I.	    `&lt;div>`: Contenedor genérico. Es como una caja en la que podemos poner muchos elementos. Sirve mucho para organizarlos usando CSS<br>
-            II.	    `&lt;span>`: Contenedor en línea, a diferencia de div que es como un "cuadrado"<br>
+            I.	    `&lt;div>`: Contenedor genérico. Es como una caja en la que podemos poner muchos elementos. Sirve mucho para organizarlos usando CSS.<br>
+            II.	    `&lt;span>`: Contenedor en línea, a diferencia de div que es como un "cuadrado".<br>
             III.	 `&lt;header>`, `&lt;nav>`, `&lt;main>`, `&lt;section>`, `&lt;footer>`: Contenedores o etiquetas que definen el significado del contenido que engloban.<br> Header tiene los encabezados, los footers los pies de paginas, etc<br>
         A la hora de organizar la estructura semantica del documento HTML, hay que imaginarlo como un documento normal, como una hoja que escribimos a mano, que tiene un titulo, subtitulos, fotos, formularios, lo que sea que necesitemos.
         </p>
@@ -86,7 +86,7 @@
         <p>
         I.	    `&lt;title>`: Título del sitio en la pestaña. Es el texto que se muesstra arriba de todo en el navegador. El titulo de esta pagina por ejemplo es "Los ejercicios de las pruebas de TRINI"<br>
         II.	    `&lt;link rel="stylesheet" href="archivo.css">`: Conecta a un CSS externo. En otras palabras, hace que la pagina se vea como diga archivo.css .<br>
-        III.    `&lt;script src="archivo.js">: Vincula al documento a un Javascript externo. Bascamente sirve para que lo que escribimos en en archivo.js se ejecute en la pagina.<br>
+        III.    `&lt;script src="archivo.js">: Vincula al documento a un Javascript externo. Bascamente sirve para que lo que escribimos en archivo.js se ejecute en la pagina.<br>
         IV.     `&lt;img src="ruta/a/la/foto.jpg" alt="Descripción">: Pone la foto espicificada en el documento.<br> Si la foto esta en la misma carpeta que el index.html (la pagina),<br> entonces el atributo src de la etiqueta seria sin la ruta: asi`&lt;img src="soyLaImagenQueQueresPoner.png" alt="Descripción"><br>
         Tener en cuenta que en lo que ponemos en src (source), tiene que coincidir con la ruta (camino para llegar a la ubicacion de la foto), el nombre y el tipo de archivo de la foto, si tenemos una foto png va ".png", si es un gif ".gif", si la foto se llama KUNDO ponemos KUNDO etc.
         </p>
@@ -130,7 +130,7 @@
          </p>
 
          <h6 class="hAmarillo">Flex-direction</h6>
-         <p>Define la direccion y el sentido en el que los elementos se distrubuyen<br>Acepta los siguientes "valores":<br>
+         <p>Define la direccion y el sentido en el que los elementos se distrubuyen, esto altera el comportamiento de Justify-content porque comparte la direccion y sentido. Tambien el de Aling-items que es como una linea perpendicular.<br>Acepta los siguientes "valores":<br>
             I.	      Row: Los elementos son colocados en la misma dirección del texto.
             II.       Row-reverse: Los elementos son colocados en la dirección opuesta al texto.
             III.      Column: Los Elementos se colocan de arriba hacia abajo.
@@ -140,7 +140,7 @@
 
          <h5  class="hNegro">Asignaciones</h5>
          <p>A la hora de darle estilo a los elementos tenemos tres formas:</p>
-         <p>I.      Clase (.): Múltiples elementos diferentes no necesariamente del mismo tipo con características iguales o parecidas</p>
+         <p>I.      Clase (.): Múltiples elementos diferentes no necesariamente del mismo tipo con características iguales o parecidas.</p>
          <div class="enFila"> <h1 class="clase"> SOY UN h1 TENGO LA MISMA CLASE QUE LA FOTO DE TOCK-MAN </h1> <img class="clase" src="tock-man.jpg" alt="¡es el!"></div>
         <div class="elementosCentrados"><img src="CSS clase+.png" alt="jaja me quiero morir"> </div> 
          <p>II.     Id(#): Para darle caracteristicas visuales unicas a un solo elemento.</p>
@@ -175,7 +175,7 @@
                   <form> <button class="FALSO">Falso</button> </form>
            </div>
 
-           <h4>b. En HTML podemos asignar handlers a los elementos que se originen en un elemento a traves de atributos de ese elemento.</h4>
+           <h4>b. En HTML podemos asignar handlers a los eventos que se originen en un elemento a traves de atributos de ese elemento.</h4>
 
            <div class="centrado fondoPsicodelico"> 
                   <button class="Verdad" onclick="CORRECTO()">Verdadero</button>  <button class="FALSO" onclick="INCORRECTO()">Falso</button>
