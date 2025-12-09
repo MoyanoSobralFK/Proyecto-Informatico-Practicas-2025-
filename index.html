@@ -18,7 +18,7 @@
     <h2 class="tema">Temas</h1>
     
     <div>
-        <div class="enFila2"><h3>CLI </h3><h6>(Command Line Interface)</h6></div>
+        <div class="enFila2 hRojo"><h3>CLI </h3><h6 >(Command Line Interface)</h6></div>
         <p><b>Comando:</b> Instruccion que el usuario le da al sistema.</p>
         <p>TIPOS</p>
         <p>I.	<b>Mkdir -nombre-:</b> Crea una nueva carpeta nombrada como -nombre- ("make directory").<br>
@@ -33,7 +33,7 @@
            X.	<b>Sort:</b> Ordena los archivos alfabéticamente. <br>
         </p>
 
-        <h3>Git</h3>
+        <h3  class="hRojo">Git</h3>
         <p> I.	    <b>git init:</b> Inicializa un nuevo repositorio local.<br>
             II.	    <b>git add archivo:</b> Agrega el archivo archivo al área de staging.<br>
             III.	<b>git commit -m "mensaje":</b> Guarda los cambios localmente con un mensaje.<br>
@@ -43,21 +43,21 @@
             VIII.	<b>git pull:</b> Trae los cambios desde el repo remoto al local.<br>
 </p>
 
-        <h3>GitHub</h3>
+        <h3  class="hRojo">GitHub</h3>
         <p> <b>I.	Crear nuevo repo:</b> Botón "New repository" en GitHub, completás datos y lo creás. <br>
             <b>II.	PATs (Personal Access Tokens):</b> Token que reemplaza contraseña para autenticar en GitHub desde la terminal.<br>
             <b>III. Pushear repo desde terminal:</b> git init → git remote add → git add → git commit→git push.<br>
             <b>IV.	GitHub Pages:</b> En Settings del repo, activás Pages con la rama main y carpeta `/root`. <br>
         </p>
 
-        <h3>HTML</h3>
-        <h5>Elementos y atributos</h5>
+        <h3  class="hRojo">HTML</h3>
+        <h5 class="hAmarillo">Elementos y atributos</h5>
         <p>I.	Elementos: Son las partes del documento HTML, pueden ser reconocibles porque poseen etiquetas como &lt;p&gt; &lt;a&gt; y &lt;img&gt;. <br>
            II.  Atributos: Son palabras especiales utilizadas dentro de la etiqueta de apertura para controlar el comportamiento del elemento.<br> 
            Otra definicion util seria; propiedades dentro de las etiquetas. Ejemplos: `src`, `href`, `alt`, `class`, `id`.<br>
         </p>
 
-        <h5>Los elementos de Texto</h5>
+        <h5 class="hAmarillo">Los elementos de Texto</h5>
         <p>
             I.	    `&lt;h1>` a `&lt;h6&gt;`: Son los encabezados (headers), los usamos como titulos o subtitulos. h1 es el más grande, h6 el más chico.<br>
             II.	    `&lt;p&gt;`: Son los parrafos del documento. Si tener que escribir mucho, lo que escribas va a ir en un párrafo.<br>
@@ -66,7 +66,7 @@
             V.	    `&lt;a href="-texto-.html"&gt;`: Son enlaces a otras paginas. <br>
                      Ejemplo: &lt;a href="Pagina12.com.ar"&gt; Apreta para ir a Pagina12 &lt;/a&gt;  ------> <a href="pagina12.com.ar">Apreta para ir a Pagina12 </a><br>
         </p>
-        <h5>Las estructuras de los elementos</h5>
+        <h5 class="hAmarillo">Las estructuras de los elementos</h5>
         <p>
             I.	    Bloque: Ocupa todo el ancho. Ej: `&lt;div>`, `&lt;p>`, `&lt;h1>`.<br>
             II.	    En línea: Ocupa solo el ancho necesario. Ej: `&lt;span>`, `&lt;a>`, `&lt;img>`.<br>
@@ -74,27 +74,82 @@
                     Son facilmente reconocibles porque no requieren etiqueta de cierre, como por ejemplo &lt;/elemento>.<br> Algunos elementos vacios son: `&lt;img>`, `&lt;br>`.
         </p>
 
-        <h5>Estructura semantica</h5>
+        <h5 class="hAmarillo">Estructura semantica</h5>
         <p>
-            I.	    `&lt;div>`: Contenedor genérico.<br>
-            II.	    `&lt;span>`: Contenedor en línea.<br>
-            III.	 `&lt;header>`, `&lt;nav>`, `&lt;main>`, `&lt;section>`, `&lt;footer>`: Contenedores o etiquetas que definen el significado del contenido que engloban.<br>
+            I.	    `&lt;div>`: Contenedor genérico. Es como una caja en la que podemos poner muchos elementos. Sirve mucho para organizarlos usando CSS<br>
+            II.	    `&lt;span>`: Contenedor en línea, a diferencia de div que es como un "cuadrado"<br>
+            III.	 `&lt;header>`, `&lt;nav>`, `&lt;main>`, `&lt;section>`, `&lt;footer>`: Contenedores o etiquetas que definen el significado del contenido que engloban.<br> Header tiene los encabezados, los footers los pies de paginas, etc<br>
+        A la hora de organizar la estructura semantica del documento HTML, hay que imaginarlo como un documento normal, como una hoja que escribimos a mano, que tiene un titulo, subtitulos, fotos, formularios, lo que sea que necesitemos.
         </p>
 
-        <h5>Head y recursos</h5>
+        <h5  class="hAmarillo">Head y recursos</h5>
         <p>
         I.	    `&lt;title>`: Título del sitio en la pestaña. Es el texto que se muesstra arriba de todo en el navegador. El titulo de esta pagina por ejemplo es "Los ejercicios de las pruebas de TRINI"<br>
         II.	    `&lt;link rel="stylesheet" href="archivo.css">`: Conecta a un CSS externo. En otras palabras, hace que la pagina se vea como diga archivo.css .<br>
         III.    `&lt;script src="archivo.js">: Vincula al documento a un Javascript externo. Bascamente sirve para que lo que escribimos en en archivo.js se ejecute en la pagina.<br>
-        IV.     `&lt;img src="ruta/a/la/foto.jpg" alt="Descripción">: Pone la foto espicificada en el documento.<br> Si la foto esta en la misma carpeta que el index.html (la pagina), entonces el atributo src de la etiqueta seria sin la ruta: asi`&lt;img src="soyLaImagenQueQueresPoner.png" alt="Descripción"><br>
+        IV.     `&lt;img src="ruta/a/la/foto.jpg" alt="Descripción">: Pone la foto espicificada en el documento.<br> Si la foto esta en la misma carpeta que el index.html (la pagina),<br> entonces el atributo src de la etiqueta seria sin la ruta: asi`&lt;img src="soyLaImagenQueQueresPoner.png" alt="Descripción"><br>
         Tener en cuenta que en lo que ponemos en src (source), tiene que coincidir con la ruta (camino para llegar a la ubicacion de la foto), el nombre y el tipo de archivo de la foto, si tenemos una foto png va ".png", si es un gif ".gif", si la foto se llama KUNDO ponemos KUNDO etc.
-
         </p>
-
-
-
     </div>
 
+    <div class="enFila2 hRojo"><h3>CSS </h3><h5>(Cascading Style Sheets) - Hojas de Estilo en Cascada.</h5></div>
+    <div>
+        <h5 class="hNegro">Propiedades Generales</h5>
+        <p>Cuando hablamos de propiedades, almenos en CSS, nos referimos a las caracteristicas de un elemento, ya sean de forma, espacio o color.</p>
+        <div class="enFila">
+            <p>I.       Width: Es el ancho del elemento.<br>
+              II.       Height: Es la altura.<br>
+              III.      Padding: Traducido del ingles como relleno, es el espacio interno entre el contenido de un elemento y su borde.<br> Si el padding es mas grande que la altura o el ancho del elemento, no se van a respetar las dimensiones originales y la maquina va a ensanchar o alargar el elemento todo lo necesario para que el padding se cumpla.<br>
+             IV.        Margin: O en español margen, es el espacio exterior minimo que hay entre el elemento y otros.<br>
+              V.        Border: Es el borde del elemento. Es por defecto invisible, si queremos que se vea tenemos que indicar la cantidad de pixeles de su grosor (px) y escribir "solid".<br>
+             </p>
+             <img src="Ejemplo de CSS.png" alt="quiero aprobar profe">
+        </div>
+
+        <h5 class="hNegro">Flexbox</h5>
+        <p>Flexbox es una herramienta CSS muy util para gestionar el espacio de la pagina y la ubicacion de los elementos, pero NO forma parte de las propiedades basicas de CSS<br>
+        Tiene tres propiedades principales:
+        </p>
+
+        <h6 class="hAmarillo">Justify-content</h6>
+        <p>Ordena los elementos del contenedor en sentido horizontal, por ejemplo si tengo muchas fotos (elemento) en un div (contenedor) y quiero que esten a la izquierda, tendria que aplicar la propiedad que corresponda al div. <br>
+            A la hora de usarlo sirve pensar en una linea horizontal, siendo su final su derecha y su principio su izquierda.<br>Acepta los siguientes "valores":<br>
+            I.      Flex-start: Alinea los elementos al lado izquierdo del contenedor.<br>
+            II.	    Flex-end: Alinea elementos al lado derecho del contenedor.<br>
+            III.	Center: Alinea elementos en el centro del contenedor.<br>
+            IV.	    Space-between: Pone espacios iguales entre los elementos, sin considerar los bordes. Por eso se siente mas comprimido<br>
+            V.	    Space-around: Distribuye el espacio de igual forma entre elementos y los bordes del contenedor. Por eso se ve mas espaciado.<br>
+        </p>
+        <h6 class="hAmarillo">Align-items</h6>
+        <p>Es como justify-content, pero en vez de ser horizontalmente, es verticalmente. Pensar en una linea que nace desde arriba y desciende y termina abajo ayuda.<br>Acepta los siguientes "valores":<br>
+           I.	    Flex-start: Alinea elementos a la parte superior del contenedor.<br>
+           II.	    Flex-end: Alinea elementos a la parte inferior del contenedor.<br>
+           III.	    Center: Alinea elementos en el centro (verticalmente hablando) del contenedor.<br>
+           IV.	    Baseline: Muestra elementos en la línea base del contenedor.<br>
+           V.   	Stretch: los Elementos se estiran para ajustarse al contenedor.<br>
+         </p>
+
+         <h6 class="hAmarillo">Flex-direction</h6>
+         <p>Define la direccion y el sentido en el que los elementos se distrubuyen<br>Acepta los siguientes "valores":<br>
+            I.	      Row: Los elementos son colocados en la misma dirección del texto.
+            II.       Row-reverse: Los elementos son colocados en la dirección opuesta al texto.
+            III.      Column: Los Elementos se colocan de arriba hacia abajo.
+            IV.	      Column-reverse: Los elementos se colocan de abajo hacia arriba.
+         </p>
+         <div class="FALSO2 enFila"><img src="CSS row.png"> <img src="CSS column.png"></div>
+
+         <h5  class="hNegro">Asignaciones</h5>
+         <p>A la hora de darle estilo a los elementos tenemos tres formas:</p>
+         <p>I.      Clase (.): Múltiples elementos diferentes no necesariamente del mismo tipo con características iguales o parecidas</p>
+         <div class="enFila"> <h1 class="clase"> SOY UN h1 TENGO LA MISMA CLASE QUE LA FOTO </h1> <img class="clase" src="tock-man.jpg" alt="¡es el!"></div>
+        <div class="elementosCentrados"><img src="CSS clase+.png" alt="jaja me quiero morir"> </div> 
+         <p>II.     Id(#): Para darle caracteristicas visuales unicas a un solo elemento.</p>
+         <div class="elementosCentrados"> <h1 id="Id"> YO SOY UNICO EN EL MUNDO (:</h1>  <img src="CSSS id.png" alt="El codigo CSS">   </div>
+
+         <p>III.    Etiqueta(&lt;X>): Para hacer que todos los elementos de un determinado se vean iguales.</p>
+         <div class="enFila"> <img  src="CSS elemento.png" alt="El codigo CSS"></div>
+
+    </div>
 <!--  .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- -->
     <h1 class="prueba">PRUEBA 2</h1>
 

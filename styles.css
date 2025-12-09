@@ -88,6 +88,20 @@
     margin:   9px;
 }
 
+.FALSO2{
+    background-color: rgba(255, 255, 255, 0.15);
+    background-image:  url('FALSO.png');
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;                 /* Evita que se repita */
+    background-position: center;                  /* Centra la imagen */
+    background-size: cover;                       /* La foto Cubre todo el área del elemento */
+
+    weight: 200px;
+    padding: 10.67px;
+    margin:   9px;
+    display: flex;
+    justify-content: space-around;
+}
 
 .Verdad{
     background-color: rgba(255, 255, 255, 0.15);
@@ -139,3 +153,58 @@
     margin: 10px;
 }
 
+.hAmarillo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+
+    height: 103px;
+    width: 103px;
+    padding: 10px;
+
+}
+.hRojo{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+}
+
+.hNegro{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.elementosCentrados{
+    display: flex;
+    justify-content: center;
+}
+
+.clase{
+    height: 222px;  /*Altura*/
+    width: 192px;   /*Anchura*/
+    padding: 23px;
+    border: 12px solid #115154;   /*El color esta en hexadecimal*/
+
+    background-color: blue;  
+    color: yellow;
+}
+
+#Id {
+    height: 22px;  /*Altura*/
+    width: 12px;   /*Anchura*/
+    padding: 23px;
+    margin: 200px;
+    transform: rotate(0.06turn); /*Rota el elemento, no es importante, solo para enfatizar.*/
+
+    background-color: rgba(000, 12, 10, 0.67);/*Negro semi transparente usando rgba, 0.67 es la transparencia*/
+}
+
+h1{
+    /* color: blue; Si esto no fuera un comentario 
+                    todos lo h1 tendrian la letra azul*/  
+}
