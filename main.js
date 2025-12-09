@@ -143,3 +143,29 @@ function ejercicioZ(event){
     document.body.appendChild(nuevoParrafo);                    //Agrega el parrafo al doumento.
     //NOTA: El parrafo puede contener el contendido del vector en su texto sin usar JSON.stringify, asi que no sabria decir que utilidad tiene esto.
 }
+
+
+
+let frutas = ['manzana', 'banana', 'cereza'];
+
+// Añadir al final
+frutas.push('naranja'); // ['manzana', 'banana', 'cereza', 'naranja']
+
+// Añadir al principio
+frutas.unshift('kiwi'); // ['kiwi', 'manzana', 'banana', 'cereza', 'naranja']
+
+// Eliminar el último
+frutas.pop(); // ['kiwi', 'manzana', 'banana', 'cereza']
+
+// Eliminar el primero
+frutas.shift(); // ['manzana', 'banana', 'cereza']
+
+// Insertar 'uva' en la columna 1 de la fila 0 (como en matrices).
+frutas.splice(1, 0, 'uva'); // ['manzana', 'uva', 'banana', 'cereza']
+
+// Convertir a string
+let textoFrutas = frutas.join(' y '); // "manzana y uva y banana y cereza"
+
+console.log(frutas);
+
+

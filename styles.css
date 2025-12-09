@@ -185,7 +185,7 @@
 }
 
 .clase{
-    height: 222px;  /*Altura*/
+    height: 262px;  /*Altura*/
     width: 192px;   /*Anchura*/
     padding: 23px;
     border: 12px solid #115154;   /*El color esta en hexadecimal*/
@@ -206,5 +206,6 @@
 
 h1{
     /* color: blue; Si esto no fuera un comentario 
-                    todos lo h1 tendrian la letra azul*/  
+                    todos lo h1 tendrian la letra azul*/
+    
 }
