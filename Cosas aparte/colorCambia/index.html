@@ -1,0 +1,39 @@
+<!-- 
+! + Tab  para escribir el ejemplo
+Consigna: Crear una pagina web que al apretar un botom cambie de color 
+-->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+
+ <link rel="icon" href="icono.png" type="image/png-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cambio de color</title>
+    
+</head>
+<body>
+    
+
+<h1>Escriba un numero rgb y aprete el boton botón</h1>
+  <!-- formulario -->
+    <form onsubmit="handleSubmit(event)">
+    <input id="r_id" type="number" name="r" placeholder="r (rojo)">
+    <input id="g_id" type="number" name="g" placeholder="g (verde)">
+    <input id="b_id" type="number" name="b" placeholder="b (azul)">
+    <input type="submit" value="Cambiar el color">
+
+  </form>
+
+    <div> 
+        <button id= "botomAzar" onclick="azar()">Apretame</button>
+   </div>
+  
+</body>
+
+
+<script src="main.js"></script>
+</html>
+

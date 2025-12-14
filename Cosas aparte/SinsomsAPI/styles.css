@@ -1,0 +1,74 @@
+/*Recordar que para modificar los elementos HTML existen tres formas:
+
+  1 - Por tipo: Es tan simple como especificar el tipo. Por ejemplo si quiseramos cambiar el color de todos los h1 quedaria asi;
+  h1 {              
+    color: blue;
+    }
+
+  2 - Por id (#): Sirve para cambiar uno (preferiblemente) o mas determinados elementos especificos. Por ejemplo si quisiera que un h1 que uso como titulo y
+   un h3 que uso como subtitulo sean azules sin tener que hacer a todos los h1 y h3 del mismo color podria darles un id. Supongamos sea "azul", entonces deberia de quedar;
+  #azul {
+    color: blue;
+  }
+
+  3 - Por clase(.): A mi interpretacion, las clases sirven para lo mismo que los id. Gracias a esto se puede hacer que un determinado elemento pueda pertenecer a 
+  dos agrupaciones distintas. Aunque si es cierto que seria mejor hacer que no se repitan los id entre elementos.
+  .azul {
+    color: blue;
+    }
+
+ */
+
+html
+{
+  background-image: url("fondo.jpg"); /* Reemplaza con la ruta correcta de tu imagen */
+  background-size: cover;                        /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat;                  /* Evita que la imagen se repita */
+
+}
+
+#NomBo{
+   width: 650px;                  /*Espacio que ocupa horizontalmente*/
+  height: 20px;                  /*Espacio que ocupa verticalmente*/
+  
+  padding: 16px;                 /*Crea un espacio interno entre el contenido de un elemento y su borde*/
+  border: 2.5px solid rgba(250, 210, 1, 0.9); /* Borde gris semi-transparente (0.5) de 1 píxel de ancho continuo y de color negro alrededor del elemento botom*/
+  background-color: white;
+
+  display: flex;           /* Convierte al contenedor en un contenedor flex*/
+  justify-content: center; /* Pone el contenido en el medio en sentido horizontal*/
+  align-items: center;     /* Centra el contenido verticalmente */
+  justify-content: space-between; /*Hace que el contenido del div este espaciado entre si*/
+  margin: auto; /*Crea espacio exterior entre un elemento y los elementos que lo rodean. Auto lo centra horizontalmente*/
+  font-size: 12px;
+
+}
+
+#descripDIV{
+  width: 650px;                  /*Espacio que ocupa horizontalmente*/
+  height: 20px;                  /*Espacio que ocupa verticalmente*/
+  
+  padding: 190px;                 /*Crea un espacio interno entre el contenido de un elemento y su borde*/
+  border: 2.5px solid rgba(250, 210, 1, 0.9); /* Borde gris semi-transparente (0.5) de 1 píxel de ancho continuo y de color negro alrededor del elemento botom*/
+  background-color: rgb(250 250 250/ 50%);
+
+  display: flex;           /* Convierte al contenedor en un contenedor flex*/
+  justify-content: center; /* Pone el contenido en el medio en sentido horizontal*/
+  align-items: center;     /* Centra el contenido verticalmente */
+  justify-content: space-around; /*Hace que el contenido del div este espaciado entre si*/
+  margin: 120px auto; /*Lo centra verticalmente*/
+}
+
+.descrip{    
+  width: 350px;
+  height: 350px;
+  font-size: 15px;
+}
+
+#foto{
+	width: 220px;
+	height: 220px;
+
+}
+
+

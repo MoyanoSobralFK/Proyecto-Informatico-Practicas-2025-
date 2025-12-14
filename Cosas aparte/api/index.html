@@ -1,0 +1,75 @@
+<!-- 
+! + Tab  para escribir el ejemplo.
+Consigna: Crear una pagina web que permita cargar datos en una API local SQL
+-->
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estudiantes</title>
+</head>
+<body>
+
+    <div id="div-arriba">
+        <h1 class="letraBlanca">ET 35 ING. E. LATZINA</h1>
+    </div>
+
+
+
+<!--FORMULARIO DE ALUMNOS-->
+
+<div class="CosasEnHorizontal" id="cont">
+
+    <div class="fondoAmarillo divFormu">
+        <h3 class="letraBlanca">ALUMNO</h3>
+        <form onsubmit="enviarEstudiante(event)">
+             <div class="CosasEnVertical espacioEntre">
+                <input  type="text" id="apellido" placeholder="APELLIDO">
+                <input  type="text" id="nombre"   placeholder="NOMBRE">
+                <select name="especialidad" id="especialidad">
+                    <option value="Ciclo Basico">Ciclo Basico</option>
+                    <option value="Computacion">Computacion</option>
+                    <option value="Automotores">Automotores</option>
+                </select>
+            </div>
+            <textarea id="descripcion" rows="4" cols="50" placeholder="Descripción del alumno"></textarea>
+            <input type="submit" value="Enviar" class="alturaAuto">
+        </form>
+        
+    </div>
+
+    <!--FORMULARIO DE PROFESORES-->
+
+    <div class="fondoAmarillo divFormu">
+        <h3 class="letraBlanca">PROFESOR</h3>
+        <form onsubmit="enviarProf(event)">
+             <div class="CosasEnVertical espacioEntre">
+                <input  type="text" id="apellido" placeholder="APELLIDO">
+                <input  type="text" id="nombre"   placeholder="NOMBRE">
+                <select name="materia" id="materia">
+                    <option value="Matematica">Matematica</option>
+                    <option value="Lengua">Lengua</option>
+                    <option value="Historia">Historia</option>
+                    <option value="Civica">Civica</option>
+                    <option value="Ingles">Ingles</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Educacion fisica">Educacion Fisica </option>
+                </select>
+            </div>
+            <textarea id="descripcion" rows="4" cols="50" placeholder="Descripción del Profesor"></textarea>
+            <input type="submit" value="Enviar" class="alturaAuto">
+        </form>
+    </div>
+</div>
+    
+
+    <!--<h1>nombre</h1>
+    <img src="" id="fotodibujo">
+    -->
+</body>
+
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,47 @@
+<!-- 
+! + Tab  para escribir el ejemplo
+Consigna: Mostrar fotos y nombres de los Simpsoms usando la api "SimpsomsAPI".
+-->
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="handleSubmit(event)">
+            <input type="number" id="numero">
+            <input type="submit" value="Cambiar">
+        </form>
+        
+        <select id="selector"></select>
+        <button onclick="azar()">Aleatorio</button>
+    </div>
+
+
+    <div id="NomBo">                                      <!-- "Nombo" = Nombre y botones--> 
+        <button onclick="anterior()"> < </button>
+        <h1 id="nombre">Nombre</h1>
+        <h1 id="id"></h1>
+        <button onclick="siguiente()"> > </button>
+    </div>
+
+    <div id="descripDIV">
+        <img src="fondo.jpg" id="foto"/>
+        <p class="descrip" id="descrip">Descripcion</p>
+        <div id="info">
+                <h6 id="edad">Edad</h6>
+                <h6 id="sexo">sexo</h6>
+                <h6 id="trabajo">trabajo</h6>     
+        </div>
+    </div>
+
+    
+</body>
+
+<script src="main.js"></script>
+</html>

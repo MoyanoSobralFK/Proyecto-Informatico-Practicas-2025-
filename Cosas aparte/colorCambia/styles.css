@@ -1,0 +1,36 @@
+form {
+
+  /*Posicionar los elementos del formulario*/
+  display: flex;           /* Convierte al contenedor en un contenedor flex*/
+  justify-content: flex-end; /* Pone el contenido a la derecha. Lo mueve horizontalmente*/
+  align-items: center;     /* Centra el contenido verticalmente */
+
+  /*NOTA: No confundir el contenido del elemento con el elemento mismo. En este caso el formulario por mas que lo intentemos mover, solo se mueve el contenido
+  no el elemento.*/
+
+ /*Darle forma al formulario*/
+  margin: 120px auto;                  /*Crea espacio exterior entre un elemento y los elementos que lo rodean. Auto lo centra horizontalmente*/
+  width: 650px;                  /*Espacio que ocupa horizontalmente*/
+  height: 20px;                  /*Espacio que ocupa verticalmente*/
+  text-align: center;            /* Centra el contenido del formulario*/
+  transform: rotate(0.006turn); /*Rotar el formulario, darle un angulo de inclinacion*/
+  padding: 10px;                 /*Crea un espacio interno entre el contenido de un elemento y su borde*/
+  border: 2.5px solid rgba(100, 100, 100, 0.5); /* Borde gris semi-transparente (0.5) de 1 píxel de ancho continuo y de color negro alrededor del elemento botom*/
+}
+
+
+h1 {
+  color: 
+  margin: 0.4em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div{
+      display: flex; /* Convierte al contenedor en un contenedor flex */
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+}
