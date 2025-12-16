@@ -43,7 +43,7 @@ app.get('/estudiantes', (req, res) => { //"app.get" define que esta ruta respond
 
 // GET: Obtener un determinado estudiante por ID.   
 app.get('/estudiantes/:id', (req, res) => { //La ruta tiene un parametro dinamico (:id), esto quiere decir que 
-    const id = parseInt(req.params.id); //Declaramos la variable "id". Con "req.params.id" accedemos al valor del parametro ":id"
+    const id = parseInt(req.params.id); //Declaramos la variable "id". Con "req.params.id" accedemos al valor del parametro ":id".
                                         //Por ejemplo si tuvieramos la ruta "xxx/:numero" y quisieramos acceder al valor del parametro ":numero" tendriamos que
                                         // usar "req.params.numero". "parseInt"" lo que hace es convertir las cadenas (datos de texto) en numeros enteros (int).
 
@@ -92,7 +92,7 @@ app.put('/estudiantes/:id', (req, res) => {
     if (i !== -1) {       //".findIndex" Si no encuentra ningún elemento que cumpla la condición, devuelve -1
                          // Actualizamos los datos del estudiante con los recibidos en el cuerpo de la solicitud
         estudiantes[i] = { 
-
+            id: req.body.id
             nombre: req.body.nombre,       //En el cuerpo (body) de la solicitud (req) estan las claves "nombre" y "curso".
             curso: req.body.curso         //accedemos a ellos con "req.body.*clave*" y los guardamos en elementos del objeto, preferiblemente con el mismo nombre.
         };
